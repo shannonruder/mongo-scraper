@@ -1,0 +1,36 @@
+.jumbotron {
+  background: url("/assets/img/techbk.jpeg") no-repeat center center;
+}
+
+.jumbotron h1{
+  color: #fff;
+}
+
+.jumbotron p{
+  color: #fff;
+}
+
+.display-4 {
+  color: white !important;
+  font-size: 64px;
+  font-weight: bolder;
+}
+
+.lead {
+  font-size: 38px;
+  /* font-weight: bolder; */
+}
+.h3{
+  font-size: 16px;
+  color:  #345c43;
+}
+
+
+.btn-primary {
+  background-color: #345c43;
+  color: white !important;
+}
+
+.note-item-list {
+  padding: 5px;
+}

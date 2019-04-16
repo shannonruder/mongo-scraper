@@ -61,8 +61,13 @@ app.get("/scrape", function(req, res) {
     // Load the html body from request into cheerio
     var $ = cheerio.load(html);
     $("div.post-block").each(function(i, element) {
+    // $("span.cd_headline-txt").each(function(i, element) {
 
       // trim() removes whitespace because the items return \n and \t before and after the text
+      // var title = $(element).find("a.post-block__title__link").text().trim();
+      // var link = $(element).find("a.post-block__title__link").attr("href");
+      // var intro = $(element).children(".post-block__content").text().trim();
+
       var title = $(element).find("a.post-block__title__link").text().trim();
       var link = $(element).find("a.post-block__title__link").attr("href");
       var intro = $(element).children(".post-block__content").text().trim();
